@@ -67,7 +67,7 @@ RUN apt-get -y install xvfb
 # OpenCascade
 RUN git clone https://github.com/Open-Cascade-SAS/OCCT.git opencascade
 WORKDIR /opencascade
-RUN git checkout V7_4_0 -b dev-branch
+RUN git checkout V7_6_0 -b dev-branch
 RUN mkdir -p build
 WORKDIR /opencascade/build
 RUN cmake .. \
